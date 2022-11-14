@@ -5,9 +5,8 @@
 // Created on: NOV 2022
 // This file contains the JS functions for index.html
 
-class SplashScene extends Phaser.Scene{
-
-constructor() {
-    super({key: "splashScene"})
-}
+class SplashScene extends Phaser.Scene {
+  constructor() {
+    super({ key: "splashScene" });
+  }
 }
