@@ -13,11 +13,11 @@ class SplashScene extends Phaser.Scene {
    * @param {object} data - any data passed via ScenePlugin.add() or ScenePlugin.start()
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ffffff")
+    this.cameras.main.setBackgroundColor("ffffff");
   }
 
   preload() {
-    console.log("Splash Scene")
+    console.log("Splash Scene");
   }
 
   /**
@@ -28,4 +28,4 @@ class SplashScene extends Phaser.Scene {
     //pass
   }
 }
-export default SplashScene
+export default SplashScene;
