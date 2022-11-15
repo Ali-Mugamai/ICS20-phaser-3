@@ -9,4 +9,23 @@ class SplashScene extends Phaser.Scene {
   constructor() {
     super({ key: "splashScene" });
   }
+  /**
+   * @param {object} data - any data passed via ScenePlugin.add() or ScenePlugin.start()
+   */
+  init(data) {
+    this.cameras.main.setBackgroundColor("ffffff")
+  }
+
+  preload() {
+    console.log("Splash Scene")
+  }
+
+  /**
+   * @param {number} time - the current time
+   * @param {number} delta - the delta time in ms since last frame
+   */
+  update(time, delta) {
+    //pass
+  }
 }
+export default SplashScene
