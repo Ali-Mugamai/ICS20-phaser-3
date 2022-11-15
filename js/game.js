@@ -28,4 +28,3 @@ const game = new Phaser.Game(config);
 
 game.scene.add("splashScene", splashScene);
 game.scene.start("splashScene");
-console.log(game);
