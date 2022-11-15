@@ -23,9 +23,9 @@ class SplashScene extends Phaser.Scene {
   /**
    * @param {object} data - any data passed via scene plugin.add() or scene plugin.start()
    */
-create(data) {
-  //pass
-}
+  create(data) {
+    //pass
+  }
   /**
    * @param {number} time - the current time
    * @param {number} delta - the delta time in ms since last frame
