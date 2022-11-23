@@ -7,33 +7,43 @@
 
 class SplashScene extends Phaser.Scene {
   constructor() {
-    super({ key: "splashScene" });
+    super({ key: "splashScene" })
+
+    this.splashSceneBackgroundImage = null
   }
   /**
    * @param {object} data - any data passed via ScenePlugin.add() or ScenePlugin.start()
    */
-  init(data) {
-    this.cameras.main.setBackgroundColor("ffffff");
+  init(data) { 
+    this.cameras.main.setBackgroundColor("ffffff")
   }
 
   preload() {
-    console.log("Splash Scene");
+    console.log("Splash Scene")
+    this.load.image("splashSceneBackground", "./assets/splashSceneImage.png")
   }
 
   /**
    * @param {object} data - any data passed via scene plugin.add() or scene plugin.start()
    */
   create(data) {
-    //pass
+    this.splashSceneBackgroundImage = this.add.sprite(
+      0,
+      0,
+      "splashSceneBackground"
+    )
+    this.splashSceneBackgroundImage.x = 1920 / 2
+    this.splashSceneBackgroundImage.y = 1080 / 2
   }
   /**
    * @param {number} time - the current time
    * @param {number} delta - the delta time in ms since last frame
    */
   update(time, delta) {
-    this.scene.switch("titleScene");
-    //pass
+    if (time > 3000) {
+      this.scene.switch("titleScene")
+    }
   }
 }
 
-export default SplashScene;
+export default SplashScene
