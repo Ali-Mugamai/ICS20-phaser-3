@@ -6,27 +6,25 @@
 // This file contains the JS functions for index.html
 
 class MenuScene extends Phaser.Scene {
+  constructor() {
+    super({ key: "menuScene" });
+  }
 
-    constructor() {
-        super({ key: "menuScene" })
-    }
+  Infinity(data) {
+    this.cameras.main.setBackgroundColor("ffffff");
+  }
 
-    Infinity(data) {
-        this.cameras.main.setBackgroundColor("ffffff")
-    }
+  preload() {
+    console.log("Menu Scene");
+  }
 
+  create(data) {
+    //pass
+  }
 
-    preload() {
-        console.log("Menu Scene")
-    }
-
-    create(data) {
-        //pass
-    }
-
-    update(time, delta) {
-        //pass
-    }
+  update(time, delta) {
+    //pass
+  }
 }
 
-export default MenuScene
+export default MenuScene;
