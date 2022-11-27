@@ -15,7 +15,7 @@ class TitleScene extends Phaser.Scene {
       font: "200px Times",
       fill: "#fde4b9",
       align: "center",
-    };
+    }
   }
   /**
    * @param {object} data
@@ -25,9 +25,7 @@ class TitleScene extends Phaser.Scene {
   }
   preload() {
     console.log("Title Scene");
-    this.preload.image(
-      "titleSceneBackground",
-      "assets/aliens_screen_image.jpg"
+    this.load.image("titleSceneBackground", "assets/aliens_screen_image.jpg"
     );
   }
   create(data) {
@@ -39,7 +37,7 @@ class TitleScene extends Phaser.Scene {
 
     this.titleSceneText = this.add
       .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titleSceneTextStyle)
-      .setOrigin(0.5);
+      .setOrigin(0.5)
   }
   /**
    * @param {number} time - the current time
