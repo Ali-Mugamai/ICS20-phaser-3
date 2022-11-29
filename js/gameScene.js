@@ -6,26 +6,25 @@
 // This file contains the JS functions for index.html
 
 class GameScene extends Phaser.scene {
+  constructor() {
+    super({ key: "gameScene" });
+  }
 
-    constructor() {
-        super({key: "gameScene"})
-    }
+  init(data) {
+    this.cameras.main.setBackgroundColor("ffffff");
+  }
 
-    init(data) {
-        this.cameras.main.setBackgroundColor("ffffff")
-    }
-    
-    preload() {
-        console.log("Game Scene")
-    }
+  preload() {
+    console.log("Game Scene");
+  }
 
-    create(data) {
-        //pass
-    }
+  create(data) {
+    //pass
+  }
 
-    update(time, delta) {
-        //pass
-    }
+  update(time, delta) {
+    //pass
+  }
 }
 
-export default GameScene
+export default GameScene;
