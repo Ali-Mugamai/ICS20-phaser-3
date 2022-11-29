@@ -27,7 +27,7 @@ class MenuScene extends Phaser.Scene {
 
   create(data) {
     this.menuSceneBackgroundImage = this.add.sprite(
-      0,
+      0, 
       0,
       "menuSceneBackground"
     );
