@@ -43,7 +43,9 @@ class TitleScene extends Phaser.Scene {
    * @param {number} delta - the delta time in ms since last frame
    */
   update(time, delta) {
-    //pass
+    if (time > 6000) {
+      this.scene.switch('menuScene')
+    }
   }
 }
 

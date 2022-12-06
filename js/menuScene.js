@@ -19,9 +19,10 @@ class MenuScene extends Phaser.Scene {
     this.cameras.main.setBackgroundColor("ffffff");
   }
 
-  preload() {
+  preload () {
     console.log("Menu Scene");
-    this.load.image("menuSceneBackground", "./assets/aliens_screen_image2.jpg");
+    this.load.image("menuSceneBackground", "./assets/aliens_screen_image2.jpg"
+    );
     this.load.image("startButton", "./assets/start.png");
   }
 
@@ -40,7 +41,7 @@ class MenuScene extends Phaser.Scene {
   }
 
   update(time, delta) {
-    //pass
+    
   }
 
   clickButton() {
