@@ -5,7 +5,8 @@
 // Created on: NOV 2022
 // This file contains the JS functions for index.html
 
-class GameScene extends Phaser.scene {
+class GameScene extends Phaser.Scene {
+
   constructor() {
     super({ key: "gameScene" });
   }
