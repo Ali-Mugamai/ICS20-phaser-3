@@ -51,7 +51,7 @@ class GameScene extends Phaser.Scene {
       if (this.ship.x > 1920) 
         this.ship.x = 1920;
       }
-    }
+    
 
     if (keySpaceObj.isDown === true) {
       if (this.firemissile === false) {
@@ -63,6 +63,7 @@ class GameScene extends Phaser.Scene {
 
   if (keySpaceObj.isUp === true) {
     this.firemissile = false
+    }
   }
 }
 
