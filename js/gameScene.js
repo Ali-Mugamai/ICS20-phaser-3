@@ -62,7 +62,7 @@ class GameScene extends Phaser.Scene {
           "missile"
         );
         this.missileGroup.add(aNewMissile);
-        this.sound.play("laser")
+        this.sound.play("laser");
       }
     }
 
@@ -71,11 +71,11 @@ class GameScene extends Phaser.Scene {
     }
 
     this.missileGrou.children.each(function (item) {
-      item.y = item.y - 15
+      item.y = item.y - 15;
       if (item.y < 0) {
-        item.destroy()
+        item.destroy();
       }
-    })
+    });
   }
 }
 
