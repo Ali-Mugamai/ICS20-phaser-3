@@ -25,7 +25,7 @@ class GameScene extends Phaser.Scene {
     this.load.image("ship", "./assets/spaceShip.png");
     this.load.image("missile", "./assets/missile.png");
 
-    this.load.audio("laser", "./assets/laser1.wav")
+    this.load.audio("laser", "./assets/laser1.wav");
   }
 
   create(data) {
